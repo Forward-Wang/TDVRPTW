@@ -21,7 +21,6 @@ public class node {
 		this.neighbours = neighbours;
 	}
 
-	
 	node(int id){
 		this.id = id;
 	}
@@ -29,5 +28,6 @@ public class node {
 	void addNeighbour(int n){
 		neighbours.addElement(n);
 	}
+	
 	
 }

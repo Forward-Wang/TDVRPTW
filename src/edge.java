@@ -34,8 +34,4 @@ public class edge {
 	public int[][] getTimes() {
 		return times;
 	}
-	
-	public void setTimeFromSpeed(int[][] speed) {
-		
-	}
 }
