@@ -3,7 +3,7 @@ import java.util.List;
 
 public class solution {
 	
-	int num_vehicles,num_nodes;
+	int num_vehicles,num_nodes, num_nodes_visited;
 	List<List<Integer>> routes;
 	
 	solution(int num_vehicles, int num_nodes){
@@ -20,6 +20,10 @@ public class solution {
 	
 	public int getNum_vehicles() {
 		return num_vehicles;
+	}
+	
+	public int getNum_nodes_visited() {
+		return num_nodes_visited;
 	}
 	
 	public int getNum_nodes() {
