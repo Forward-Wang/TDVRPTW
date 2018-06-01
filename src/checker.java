@@ -1,10 +1,13 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class checker
 {
-	public static void main ( String args [])
+	public static void mains ( String args [])
 	{
 		BufferedReader br = null;
 		data r = new data();
@@ -33,5 +36,14 @@ public class checker
 			}
 		}
 		
+	}
+	
+	
+	public static void main(String args[]) {
+		List<Integer> in = new ArrayList<>(Arrays.asList(1,2,3,4,5,6));
+		
+		for(int i: in) {
+			System.out.println(i);
+		}
 	}
 }

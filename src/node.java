@@ -1,20 +1,25 @@
-import java.util.Vector;
+import java.util.ArrayList;
+import java.util.List;
 
 public class node {
 	
 	private int id,x,y,u,l;
-	private Vector<Integer> neighbours;
+	private List<edge> incident_edges;		//list of edges incident on current node
+	
+	node(){
+		incident_edges = new ArrayList<>();
+	}
 	
 	public int getId() {
 		return id;
 	}
 
-	public Vector<Integer> getNeighbours() {
-		return neighbours;
+	public List<edge> getIncident_edges() {
+		return incident_edges;
 	}
 
-	public void setNeighbours(Vector<Integer> neighbours) {
-		this.neighbours = neighbours;
+	public void setIncident_edges(List<edge> incident_edges) {
+		this.incident_edges = incident_edges;
 	}
 
 	public int getX() {
@@ -53,8 +58,8 @@ public class node {
 		this.id = id;
 	}
 	
-	void addNeighbour(int n){
-		neighbours.addElement(n);
+	void addIncident_edges(edge e){
+		incident_edges.add(e);
 	}
 
 	

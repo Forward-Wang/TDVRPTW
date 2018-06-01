@@ -3,9 +3,17 @@ public class edge {
 	
 	private int end1, end2;
 	private int dist;
-
+	private double[][] speed;
+	
 	private int times[][] = new int[2][];
 	
+	public double[][] getSpeed() {
+		return speed;
+	}
+	
+	public void setSpeed(double[][] speed) {
+		this.speed = speed;
+	}
 
 	public int getEnd1() {
 		return end1;
@@ -33,5 +41,14 @@ public class edge {
 	
 	public int[][] getTimes() {
 		return times;
+	}
+	
+	public int getOther_end(int n) throws Exception {
+		if(end1==n)
+			return end2;
+		else if(end2==n)
+			return end1;
+		else
+			throw new Exception("Edge not incident on this node.");
 	}
 }

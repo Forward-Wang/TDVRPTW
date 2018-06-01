@@ -3,7 +3,7 @@ import java.util.List;
 
 public class data {
 	
-	private int num_nodes,num_vehicles;
+	private int num_nodes,num_vehicles, max_vehicles;
 //	vehicle[] vehicles;
 	private List<node> nodes;
 	
@@ -20,6 +20,10 @@ public class data {
 	public int getNum_nodes() {
 		return num_nodes;
 	}
+	
+	public int getMax_vehicles() {
+		return max_vehicles;
+	}
 
 	public int getNum_vehicles() {
 		return num_vehicles;
@@ -27,6 +31,10 @@ public class data {
 
 	public void setNum_vehicles(int num_vehicles) {
 		this.num_vehicles = num_vehicles;
+	}
+	
+	public List<node> getNodes() {
+		return nodes;
 	}
 
 	public void addCustomer(String s) {
