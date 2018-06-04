@@ -1,3 +1,4 @@
+import java.util.List;
 
 public class commonFunctions {
 
@@ -50,5 +51,20 @@ public class commonFunctions {
 		}
 		System.out.println("Final time: "+t_);
 		return t_;
+	}
+	
+	static void printSolution(solution s) {
+		
+		System.out.println("Number of vehicles used: "+s.getNum_vehicles()+ " to cover num_nodes: "+s.getNum_nodes());
+		System.out.println("Routes of vehicles are:");
+		int i=0;
+		for(List<Integer> route : s.getRoutes()) {
+			System.out.println("vehicle no.: "+i+1);
+			System.out.print("\t");
+			for(int n: route) {
+				System.out.print(n+", ");
+			}
+			System.out.println();
+		}
 	}
 }

@@ -5,6 +5,7 @@ public class data {
 	
 	private int num_nodes,num_vehicles, max_vehicles;
 //	vehicle[] vehicles;
+	private double starting_time = 0, end_time = 100;			// set these times
 	private List<node> nodes;
 	
 	data(){
@@ -15,6 +16,18 @@ public class data {
 		num_vehicles = 0;
 		num_nodes = 0;
 		nodes = new ArrayList<>();
+	}
+	
+	public node getDepot() {
+		return nodes.get(0);
+	}
+	
+	public double getStarting_time() {
+		return starting_time;
+	}
+	
+	public double getEnd_time() {
+		return end_time;
 	}
 	
 	public int getNum_nodes() {

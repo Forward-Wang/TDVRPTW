@@ -3,8 +3,8 @@ import java.util.List;
 
 public class solution {
 	
-	int num_vehicles,num_nodes, num_nodes_visited;
-	List<List<Integer>> routes;
+	private int num_vehicles,num_nodes, num_nodes_visited;
+	private List<List<Integer>> routes;
 	
 	solution(int num_vehicles, int num_nodes){
 		this.num_nodes = num_nodes;
@@ -32,6 +32,14 @@ public class solution {
 
 	void addNodeToVehicle(int vehicle_id, int node_id){
 		routes.get(vehicle_id).add(node_id);
+	}
+	
+	public List<List<Integer>> getRoutes() {
+		return routes;
+	}
+	
+	public void setRoutes(List<List<Integer>> routes) {
+		this.routes = routes;
 	}
 
 }
